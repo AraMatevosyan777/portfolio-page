@@ -1,0 +1,72 @@
+// main: ../style.less
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+}
+.articles_item{
+    margin-bottom: 2rem;
+}
+.articles_col{
+    width: 30%;
+    padding: 0 1rem;
+}
+.articles_header{
+    position: relative;
+    margin-bottom: 1.3rem;
+}
+.articles_date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 77px;
+    height: 77px;
+    background-color: @black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 1.06rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.articles_photo{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.articles_content{
+    margin-bottom: 2rem;
+}
+.articles_title{
+    margin-bottom: 0.6rem;
+    color: @black;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    a{
+        color: inherit;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.articles_cat{
+    margin-bottom: 1.5rem;
+    color: @black;
+    font-size: .8rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+.articles_text{
+    color: @gray;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 2;
+}
